@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Student Enrollment Form</h1>
+        <form id="enrollment-form">
+            <div class="input-container">
+                <label for="name" class="user">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-container">
+                <label for="email" class="user">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="gender" class="user">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="skills">
+                <div class="input-container">
+                    <label for="skills" class="user">Skills:</label>
+                    <input type="checkbox" id="skill1" name="skills" value="skill1"> Programming<br>
+                    <input type="checkbox" id="skill2" name="skills" value="skill2"> Designing<br>
+                    <input type="checkbox" id="skill3" name="skills" value="skill3"> Problem Solving<br>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button class="warn" type="reset" >Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="display-container">
+        <div id="display-data"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
